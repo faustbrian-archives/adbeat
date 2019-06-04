@@ -5,15 +5,15 @@ declare(strict_types=1);
 /*
  * This file is part of Adbeat PHP Client.
  *
- * (c) Brian Faust <hello@brianfaust.me>
+ * (c) Brian Faust <hello@basecode.sh>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace BrianFaust\AdBeat\API;
+namespace Plients\AdBeat\API;
 
-use BrianFaust\Http\HttpResponse;
+use Plients\Http\HttpResponse;
 
 class Helper extends AbstractAPI
 {
@@ -21,7 +21,7 @@ class Helper extends AbstractAPI
      * @param null|string $adSizeId
      * @param array       $parameters
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function adSizes(?string $adSizeId = null, array $parameters = []): HttpResponse
     {
@@ -32,7 +32,7 @@ class Helper extends AbstractAPI
      * @param null|string $eventTypeId
      * @param array       $parameters
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function eventTypes(?string $eventTypeId = null, array $parameters = []): HttpResponse
     {
@@ -43,7 +43,7 @@ class Helper extends AbstractAPI
      * @param null|string $adTypeId
      * @param array       $parameters
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function adTypes(?string $adTypeId = null, array $parameters = []): HttpResponse
     {
@@ -54,7 +54,7 @@ class Helper extends AbstractAPI
      * @param null|string $countryId
      * @param array       $parameters
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function countries(?string $countryId = null, array $parameters = []): HttpResponse
     {
@@ -65,7 +65,7 @@ class Helper extends AbstractAPI
      * @param null|string $networkId
      * @param array       $parameters
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function networks(?string $networkId = null, array $parameters = []): HttpResponse
     {
@@ -76,7 +76,7 @@ class Helper extends AbstractAPI
      * @param null|string $platformId
      * @param array       $parameters
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function platforms(?string $platformId = null, array $parameters = []): HttpResponse
     {

@@ -5,15 +5,15 @@ declare(strict_types=1);
 /*
  * This file is part of Adbeat PHP Client.
  *
- * (c) Brian Faust <hello@brianfaust.me>
+ * (c) Brian Faust <hello@basecode.sh>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace BrianFaust\AdBeat;
+namespace Plients\AdBeat;
 
-use BrianFaust\Http\Http;
+use Plients\Http\Http;
 
 class Client
 {
@@ -37,13 +37,13 @@ class Client
      *
      * @param string $name
      *
-     * @return \BrianFaust\AdBeat\API\AbstractAPI
+     * @return \Plients\AdBeat\API\AbstractAPI
      */
     public function api(string $name): API\AbstractAPI
     {
         $client = Http::withBaseUri("http://api.adbeat.com/v3/{$this->key}/");
 
-        $class = "BrianFaust\\AdBeat\\API\\{$name}";
+        $class = "Plients\\AdBeat\\API\\{$name}";
 
         return new $class($client);
     }
